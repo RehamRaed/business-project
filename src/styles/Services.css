@@ -1,0 +1,16 @@
+#services_section{
+padding: 50px 0;
+background-color: var(--bg-color) !important;
+background: url(../../src/assest/e48eb3e8351d8f19da0234a2b62a7cb1-removebg-preview.png) center no-repeat;
+background-size: cover;
+}
+#services_section h2{
+    font-weight: 700;
+    color: var(--white-color);
+    font-size: 38px;
+}
+@media (max-width:776px) {
+    #services_section h2{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,130 @@
+#hero_section{
+  background-color: var(--bg-color);
+  padding-top: 100px;
+  min-height: 100vh; 
+}
+
+#hero_section .row{
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#hero_section .title{
+  font-size: 3.2rem;
+  font-weight: 200;
+  color: var(--white-color);
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+}
+
+#hero_section .title span{
+  font-weight: 800;
+}
+
+#hero_section .col_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero_section .col_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn-wrapper a{
+  font-weight: 700;
+}
+
+#hero_section .sub-bunner-div{
+  background-color: var(--secondery-color);
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  height: 285px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius:30px ;
+  right: 168px;
+  top: -128px;
+}
+
+#hero_section .sub-bunner-image{
+  overflow: hidden;
+  width: 400px;
+  height: 300px;
+  border-radius: 0 3rem;
+  position: absolute;
+  z-index: 2;
+}
+
+#hero_section .sub-bunner-image img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#hero_section .col_2 .banner-style-1,
+#hero_section .col_2 .banner-style-2,
+#hero_section .col_2 .banner-style-3 {
+  position: absolute;
+  z-index: 3;
+  padding: 5px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 1rem 3rem red; 
+  width: max-content;
+  height: max-content;
+  gap: 5px;
+}
+
+#hero_section .col_2 h4{
+  font-size: 18px;
+}
+
+#hero_section .col_2 .banner-style-1 {
+  background-color: aqua;
+  top: -60px;
+  left: 125px;
+}
+
+#hero_section .col_2 .banner-style-2 {
+  background-color: blue;
+  right: 200px;
+  top: 125px;
+}
+
+#hero_section .col_2 .banner-style-3 {
+  background-color: brown;
+  left: 210px;
+  top: 200px;
+}
+
+@media (max-width: 992px) {
+  #hero_section .row {
+      flex-direction: column-reverse;
+  }
+
+  #hero_section .col_2 {
+      margin-top: 50px;
+      margin-bottom: 230px;
+  }
+  #hero_section .col_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+  #hero_section .btn-wrapper {
+    display: flex;
+    justify-content: center;}
+}
