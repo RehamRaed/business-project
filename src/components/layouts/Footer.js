@@ -16,7 +16,6 @@ function Footer() {
 
     const listenToScroll = () => {
         const heightToHidden = 250;
-        // هنا يجب استخدام window.scrollY أو document.documentElement.scrollTop
         const windowScroll = window.scrollY || document.documentElement.scrollTop;
 
         if (windowScroll > heightToHidden) {
@@ -27,10 +26,8 @@ function Footer() {
     };
 
     useEffect(() => {
-        // إضافة مستمع التمرير عندما يتم تحميل المكون
         window.addEventListener("scroll", listenToScroll);
 
-        // تنظيف المستمع عندما يتم إزالة المكون
         return () => {
             window.removeEventListener("scroll", listenToScroll);
         };
