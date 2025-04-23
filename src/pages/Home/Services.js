@@ -60,6 +60,7 @@ function Services(){
     return(
     
     <section id="services_section">
+        <div className="blur-bg"></div>
         <Container>
             <Row>
                 <Col lg={{span:8, offset:2}} className="text-center mb-5">

@@ -1,6 +1,6 @@
 import react from "react";
 import { Link } from "react-router-dom";
-import bannerImg from "../../assest/c7mwbrpp.png";
+import man from '../../assest/man.png';
 import { Container, Row, Col } from "react-bootstrap";
 import "../../styles/Hero.css";
 function Hero() {
@@ -25,10 +25,9 @@ function Hero() {
               </Link>
             </div>
           </Col>
-          <Col lg={6} md={8} sm={12}className="col_2">
-                      <div className="sub-bunner-image">
-              <img src={bannerImg} alt="img" />
-            </div>
+          <Col lg={6} md={6} sm={12}className="col_2">
+          <div className="hexagon-bg"></div>
+          <img src={man} alt="Man with Laptop" className="man-img" />
             
           </Col>
         </Row>

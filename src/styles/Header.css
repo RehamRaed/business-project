@@ -31,15 +31,12 @@
     max-width: 70px;
 }
 .navbar li a {
-    color: var(--primary-color); 
+    color: var(--white-color) !important; 
     text-decoration: none; 
+    font-family: var(--primary-font);
   }
   
-  .navbar li a:hover,
-  .navbar li a:focus {
-    color: var(--primary-color); 
-    text-decoration: none; 
-  }
+ 
   
   
 
@@ -56,6 +53,20 @@
      width: 25px;
      height: 25px;
 }
+.active-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-items {
+    transition: transform 0.1s ease-in-out;
+}
+.list_icon {
+    font-size: 2.5rem;
+}
+
 
 
 
