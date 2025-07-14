@@ -35,5 +35,4 @@ const Cards = ({ icon ,id, title, paragraph, link}) => {
 
   );
 }
-
 export default Cards;

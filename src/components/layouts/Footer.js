@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";
 import '../../styles/Footer.css';
 import arrow from '../../assest/arrow-up-svgrepo-com(1).svg'
-
 function Footer() {
     const [isVisible, setIsVisible] = useState(false);
 
