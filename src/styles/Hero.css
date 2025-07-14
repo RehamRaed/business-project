@@ -62,15 +62,29 @@
 }
 .man-img {
   position: absolute;
-  left: 46%;
+  left: 12.5%;
   transform: translateX(-50%);
   width: 403px;
   z-index: 2; 
+}
+
+@media (max-width: 1400px) {
+  .man-img {
+  left: 6.5%;
+  }
+}
+@media (max-width: 1200px) {
+  .man-img {
+  left: -1.3%;
+  }
 }
 @media (max-width: 992px) {
   #hero_section .row {
       flex-direction: column-reverse;
   }
+  .man-img {
+  left: -1.6%;
+}
 
   #hero_section .col_2 {
       margin-top: 50px;
@@ -85,4 +99,14 @@
   #hero_section .btn-wrapper {
     display: flex;
     justify-content: center;}
+}
+@media (max-width: 991px) {
+  .man-img {
+  left: -19%;
+  }
+}
+@media (max-width: 768px) {
+  .man-img {
+  left: 3.8%;
+  }
 }
