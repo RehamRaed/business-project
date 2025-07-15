@@ -1,7 +1,6 @@
 A modern and fully responsive landing page built with React. This project is designed to promote business services with creative strategies and innovative solutions. The interface is clean, user-friendly, and seamlessly adapts to all screen sizes.
-📸 Preview
 
- - Demo Link : (https://businessproject-three.vercel.app/)
+📸 Demo Link : (https://businessproject-three.vercel.app/)
 
 ✨ Features
 
