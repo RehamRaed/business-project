@@ -11,54 +11,19 @@ import solution from '../../assest/office-idea-bulb-solution-business-svgrepo-co
 import { motion } from "framer-motion";
 
 const Services_Cards = [
-    {
-        id: 1,
-        icon: cloud,
-        title: "Cloud Computing",
-        paragraph: " Cloud computing enables easy access to data and applications from anywhere using the internet efficiently.",
-        link: "Read More"
-    },
-    {
-        id: 2,
-        icon: business,
-        title: "Business Strategy",
-        paragraph: " business strategy helps organizations achieve goals through effective planning and  decision-making.",
-        link: "Read More"
-    },
-    {
-        id: 3,
-        icon: report,
-        title: "Reports Analysis",
-        paragraph: "Analyzing reports provides valuable insights for data-driven decisions and improvement in business performance.",
-        link: "Read More"
-    },
-    {
-        id: 4,
-        icon: decision,
-        title: "Decision Maker",
-        paragraph: "Making informed decisions requires analyzing data, evaluating options and selecting the best possible solution.",
-        link: "Read More"
-    },
-    {
-        id: 5,
-        icon: customer,
-        title: "Customer Oriented",
-        paragraph: "Being customer-oriented means delivering services and solutions that meet needs and experience.",
-        link: "Read More"
-    },
-    {
-        id: 6,
-        icon: solution,
-        title: "Solutions Focused",
-        paragraph: "Focusing on solutions fosters innovation and efficiency to resolve problems and improve overall productivity.",
-        link: "Read More"
-    }
+    { id: 1, icon: cloud, title: "Cloud Computing", paragraph: " Cloud computing enables easy access to data and applications from anywhere using the internet efficiently.", link: "Read More" },
+    { id: 2, icon: business, title: "Business Strategy", paragraph: " business strategy helps organizations achieve goals through effective planning and  decision-making.", link: "Read More" },
+    { id: 3, icon: report, title: "Reports Analysis", paragraph: "Analyzing reports provides valuable insights for data-driven decisions and improvement in business performance.", link: "Read More" },
+    { id: 4, icon: decision, title: "Decision Maker", paragraph: "Making informed decisions requires analyzing data, evaluating options and selecting the best possible solution.", link: "Read More" },
+    { id: 5, icon: customer, title: "Customer Oriented", paragraph: "Being customer-oriented means delivering services and solutions that meet needs and experience.", link: "Read More" },
+    { id: 6, icon: solution, title: "Solutions Focused", paragraph: "Focusing on solutions fosters innovation and efficiency to resolve problems and improve overall productivity.", link: "Read More" }
 ];
 
 function Services() {
     return (
-        <section id="services_section">
-            <div className="blur-bg"></div>
+        <section id="services_section" className="services-section">
+            <div className="stars-bg"></div>
+
             <Container>
                 <Row>
                     <Col lg={{ span: 8, offset: 2 }} className="text-center mb-5">
@@ -82,19 +47,17 @@ function Services() {
                     </Col>
                 </Row>
 
-                <Row>
-                    <Row className="row-cards">
-                        {Services_Cards.map((cardData, index) => (
-                            <Cards
-                                key={index}
-                                id={index + 1}
-                                icon={cardData.icon}
-                                title={cardData.title}
-                                paragraph={cardData.paragraph}
-                                link={cardData.link}
-                            />
-                        ))}
-                    </Row>
+                <Row className="row-cards">
+                    {Services_Cards.map((cardData, index) => (
+                        <Cards
+                            key={index}
+                            id={index + 1}
+                            icon={cardData.icon}
+                            title={cardData.title}
+                            paragraph={cardData.paragraph}
+                            link={cardData.link}
+                        />
+                    ))}
                 </Row>
             </Container>
         </section>
